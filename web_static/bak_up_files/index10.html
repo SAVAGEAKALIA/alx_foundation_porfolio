@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>A.I BLOG GENERATOR</title>
+	<!-- Css stylesheets-->
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/styles6.css">
+	<!-- CDN Google api-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&family=Quattrocento:wght@400;700&display=swap"
+	      rel="stylesheet">
+	<!--CDN FONTAWESOME icons-->
+	<script src="https://kit.fontawesome.com/5d06bdefce.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<section id="title-section1">
+	<div class="container-fluid">
+		<!-- navigation bar -->
+		
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<a class="navbar-brand quattrocento-bold" href="#">A.I BLOG GENERATOR</a>
+			
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+			        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+			        aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto mb-1 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" href="#title-section1">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#footer">Contact</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#pricing">Pricing</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		
+		<!-- Tittle -->
+		
+		<div class="row">
+			<div class="jumbotron jumbotron-fluid col-md-6">
+				<h1 class="montserrat-alternates-thin" style="font-size: 36px;"><span style="color: #ffda6a; font-size: 50px;">Welcome</span> to Saviour's <span style="color: deepskyblue">AI-</span><span style="color: #ffda6a">powered</span> blog generator!</h1>
+				<p class="quattrocento-regular" style="color: white; font-size: 16px;"><span style="color: #ffda6a">Create</span> engaging and informative blog posts with our AI-powered tool.</p>
+			</div>
+<!--			<div class="col-md-6">-->
+<!--				<img class="image1" src="images/watersplash.jpg" alt="ai_image">-->
+<!--			</div>-->
+		</div>
+	</div>
+</section>
+
+<!-- Features -->
+
+<section id="features">
+	<div class="row">
+		<div class="feature col-lg-4 col-md-6">
+			<i class="icon fa-solid fa-check fa-4x"></i>
+			<h3 style="color: #fd7e14; font-weight: bold">Easy to use.</h3>
+			<p>So easy to use, even your dog could do it.</p>
+		</div>
+		<div class="feature col-lg-4 col-md-6">
+			<i class="icon fa-solid fa-bullseye fa-4x"></i>
+			<h3 style="color: #fd7e14; font-weight: bold">Precise Generation</h3>
+			<p>The A.I that improves your prompt before Generation.</p>
+		</div>
+		<div class="feature col-lg-4 col-md-6">
+			<i class="icon fa-sharp fa-solid fa-heart fa-4x"></i>
+			<h3 style="color: #fd7e14; font-weight: bold">Guaranteed to work.</h3>
+			<p>Never worry about SEO content Anymore .</p>
+		</div>
+	</div>
+</section>
+
+
+<!--A.I bog generate-->
+<section class="gen">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="montserrat-alternates-thin">Generate your AI-powered blog posts</h1>
+			</div>
+			<div class="col-md-6">
+				<form>
+					<div class="mb-3">
+						<label for="title" class="quattrocento-bold" style="color: Black; font-size: 26px">Title</label>
+						<input type="text" class="form-control" id="title"
+						       placeholder="Enter the title of your blog post">
+					</div>
+					<div class="mb-3">
+						<label for="content" class="quattrocento-bold" style="color:white">Content</label>
+						<textarea class="form-control" id="content" rows="10"
+						          placeholder="Enter the content of you want to generate"></textarea>
+					</div>
+				</form>
+				<button type="button" class="btn btn-primary" onclick="generateBlog()"><i class="fa-solid fa-spinner"></i> Generate Blog</button>
+			</div>
+		</div>
+		<div id="blog-content" class="row mt-5"></div>
+		<div id="error-message" class="row mt-5"></div>
+		<div id="success-message" class="row mt-5"></div>
+		<div id="loading-spinner" class="row mt-5 d-none">
+			<div class="spinner-border text-primary" role="status">
+				<span class="visually-hidden">Loading...</span>
+			</div>
+		</div>
+	
+	</div>
+</section>
+
+<!--Testimonials section-->
+
+<section id="testimonials">
+	<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+		<div class="carousel-inner">
+			<div class="carousel-item active"  data-bs-interval="12000">
+				<h2><em>“A.i Blog generator churns out articles faster than a caffeinated squirrel on a typewriter! Its algorithmic prowess is unmatched. However, it occasionally veers into existential ramblings about toaster ovens. Still, a solid 4 out of 5 stars.”</em></h2>
+				<em>Jane Doe, South Africa</em>
+			</div>
+			<div class="carousel-item">
+				<h2><em> “A.i Blog generator is like having Shakespeare and a quantum physicist collaborate on a blog. It generates prose that transcends dimensions. Just be prepared for occasional haikus about black holes. 4.5 cosmic quarks out of 5!”</em></h2>
+				<em>Joshua Reins, France</em>
+			</div>
+			<div class="carousel-item">
+				<h2><em>“A.i Blog generator is a wild ride through the tangled jungle of AI-generated content. It once wrote an entire post about pineapples wearing monocles. But hey, it keeps things interesting! 3.7 out of 5 keyboard cat emojis.”</em></h2>
+				<em>Julien Barbier, United States</em>
+			</div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		</button>
+	</div>
+</section>
+
+
+<!-- Pricing -->
+<section id="pricing">
+	
+	<h2>A Plan for EveryBody's Needs</h2>
+	<p>Simple and affordable price plans for your Blog.</p>
+	
+	<div class="row m-5 text-center">
+		<div class="col-lg-4 col-md-6 mb-4 rounded-3 shadow-sm">
+			<div class="card">
+				<div class="card-header">
+					<h3>Free Plan</h3>
+				</div>
+				<div class="card-body">
+					<h2>Free</h2>
+					<p>5 Generation Per Day</p>
+					<p>1000 Characters Per Generation</p>
+					<p>Unlimited Usage</p>
+					<button class="btn btn-lg btn-block btn-outline-dark" type="button">Sign Up</button>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-lg-4 col-md-6 mb-4 rounded-3 shadow-sm">
+			<div class="card">
+				<div class="card-header">
+					<h3>Basic Plan</h3>
+				</div>
+				<div class="card-body">
+					<h2>$49 / mo</h2>
+					<p>Unlimited Generation</p>
+					<p>3000 Characters per Day</p>
+					<p>Unlimited App Usage</p>
+					<button class="btn btn-lg btn-block btn-primary" type="button">Sign Up</button>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-lg-4 col-md-6 mb-4 rounded-3 shadow-sm">
+			<div class="card">
+				<div class="card-header">
+					<h3>Pro Plan</h3>
+				</div>
+				<div class="card-body">
+					<h2>$99 / mo</h2>
+					<p>Improved Content Generated</p>
+					<p>Unlimited Generation</p>
+					<p>Unlimited Characters</p>
+					<p>Unlimited App Usage</p>
+					<button class="btn btn-lg btn-block btn-primary" type="button">Sign Up</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</section>
+
+
+<!--footer section-->
+<footer id="footer">
+	<a href="http://https://web.facebook.com/profile.php?id=61557319160801"><i class="footer-icons  fa-brands fa-facebook"></i></a>
+	<a href="https://www.instagram.com/saviourakalia/?hl=en"><i class="footer-icons  fa-brands fa-instagram"></i></a>
+	<a href="https://https://x.com/DAddy_Savy"><i class="fa-brands fa-x-twitter"></i></a>
+	<a href="https://github.com/SAVAGEAKALIA"><i class="footer-icons fa-brands fa-github"></i></a>
+	<a href="https://https://www.linkedin.com/in/saviourakalia/"><i class="footer-icons fa-brands fa-linkedin"></i></a>
+	<p>© Copyright TinDog</p>
+
+</footer>
+
+<!--javascript-->
+<script type="text/javascript" src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

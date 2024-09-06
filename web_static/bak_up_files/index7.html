@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>A.I BLOG GENERATOR</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/styles3.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&family=Quattrocento:wght@400;700&display=swap"
+	      rel="stylesheet">
+</head>
+<body>
+
+<section id="title-section1">
+	<div class="container-fluid">
+		<!-- navigation bar -->
+		
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<a class="navbar-brand quattrocento-bold" href="#">A.I BLOG GENERATOR</a>
+			
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+			        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+			        aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto mb-1 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" href="">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="">Contact</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="">Pricing</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		
+		<!-- Tittle -->
+		
+		<div class="row">
+			<div class="jumbotron jumbotron-fluid col-md-6">
+				<h1 class="montserrat-alternates-thin"><span style="color: #ffda6a">Welcome</span> to Saviour's <span style="color: deepskyblue">AI-</span><span style="color: #ffda6a">powered</span> blog generator!</h1>
+				<p class="quattrocento-regular" style="color: white; font-size: 16px;"><span style="color: #ffda6a">Create</span> engaging and informative blog posts with our AI-powered tool.</p>
+			</div>
+<!--			<div class="col-md-6">-->
+<!--				<img class="image1" src="images/watersplash.jpg" alt="ai_image">-->
+<!--			</div>-->
+		</div>
+	</div>
+</section>
+
+<!-- Features -->
+
+<section id="features">
+	<div class="row">
+		<div class="feature col-lg-4 col-md-6">
+			<h3 style="color: gold; font-weight: bold">Easy to use.</h3>
+			<p>So easy to use, even your dog could do it.</p>
+		</div>
+		<div class="feature col-lg-4 col-md-6">
+			<h3 style="color: gold; font-weight: bold">Precise Generation</h3>
+			<p>The A.I that improves your prompt before Generation.</p>
+		</div>
+		<div class="feature col-lg-4 col-md-6">
+			<h3 style="color: gold; font-weight: bold">Guaranteed to work.</h3>
+			<p>Never worry about SEO content Anymore .</p>
+		</div>
+	</div>
+</section>
+
+<!--A.I bog generate-->
+<section class="gen">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="montserrat-alternates-thin">Generate your AI-powered blog posts</h1>
+			</div>
+			<div class="col-md-6">
+				<form>
+					<div class="mb-3">
+						<label for="title" class="quattrocento-bold" style="color: Black; font-size: 26px">Title</label>
+						<input type="text" class="form-control" id="title"
+						       placeholder="Enter the title of your blog post">
+					</div>
+					<div class="mb-3">
+						<label for="content" class="quattrocento-bold" style="color:white">Content</label>
+						<textarea class="form-control" id="content" rows="10"
+						          placeholder="Enter the content of you want to generate"></textarea>
+					</div>
+				</form>
+				<button type="button" class="btn btn-primary" onclick="generateBlog()">Generate Blog</button>
+			</div>
+		</div>
+		<div id="blog-content" class="row mt-5"></div>
+		<div id="error-message" class="row mt-5"></div>
+		<div id="success-message" class="row mt-5"></div>
+		<div id="loading-spinner" class="row mt-5 d-none">
+			<div class="spinner-border text-primary" role="status">
+				<span class="visually-hidden">Loading...</span>
+			</div>
+		</div>
+	
+	</div>
+</section>
+<!-- Main content -->
+
+
+<script type="text/javascript" src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
