@@ -4,12 +4,18 @@ from os import environ
 from flask import Flask, render_template
 from .views import app_views
 from jinja2.exceptions import TemplateNotFound
+from models import storage
 
 app = Flask(__name__)
 app.register_blueprint(app_views)
 
 
 # @app.route('/', defaults={'path': ''}, strict_slashes=False)
+
+@app.teardown_appcontext
+def close_db(error):
+    """ Remove the current SQLAlchemy Session """
+    storage.close()
 
 @app.errorhandler(404)
 def page_not_found(e):

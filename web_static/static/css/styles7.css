@@ -4,7 +4,23 @@
     background-repeat: no-repeat;
     object-fit: contain;
     padding-bottom: 150px;
+    color: #fff;
 }
+@media (max-width: 1080px) {
+    #title-section1 {
+        background-image: unset;
+        background-size: unset;
+        background-repeat: unset;
+        object-fit: unset;
+        background-color: #2b3035;
+        padding-bottom: 100px;
+        color: #fff;
+    }
+    #title-section1 .row {
+        text-align: center;
+    }
+}
+
 #title {
     background-image: url(../images/waterdrop.jpg);
     background-size: cover;
@@ -120,8 +136,15 @@
 /*pricing section*/
 #pricing {
     padding: 100px;
+    margin: 0 auto;
     text-align: center;
     background-color: #f9f9f9;
+}
+
+@media (max-width: 1080px) {
+    #pricing {
+        padding: 10px;
+    }
 }
 
 

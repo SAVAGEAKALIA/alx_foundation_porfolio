@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block view %}
+    {% for post in posts %}
+        <h1>{{ post.title}}</h1>
+        <h3>{{ post.content|truncate(50000) }}</h3>
+        <p>Created on {{ post.created_at }}</p>
+         <form method="POST" action="{{ url_for('app_views.delete_post', post_id=post.id) }}">
+            <button type="submit" class="btn btn-danger">Delete</button>
+        </form>
+    {% else %}
+        <p>No posts to display.</p>
+    {% endfor %}
+{% endblock %}

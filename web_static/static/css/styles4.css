@@ -1,12 +1,12 @@
 #title-section1 {
-    background-image: url(static/images/watersplash.jpg);
+    background-image: url(../images/watersplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
     padding-bottom: 150px;
 }
 #title {
-    background-image: url(static/images/waterdrop.jpg);
+    background-image: url(../images/waterdrop.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

@@ -1,0 +1,56 @@
+<section class="gen">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="montserrat-alternates-thin">Generate your AI-powered blog posts</h1>
+            </div>
+            <div class="col-md-6">
+                <form method="POST" action="{{ url_for('app_views.home') }}">
+                    <div class="mb-3">
+                        <label for="title" class="quattrocento-bold" style="color: Black; font-size: 26px">Title</label>
+                        <input type="text" class="form-control" id="title" name="title"
+                               placeholder="Enter the title of your blog post" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="content" class="quattrocento-bold" style="color:white">Content</label>
+                        <textarea class="form-control" id="content" name="content" rows="10"
+                                  placeholder="Enter the content you want to generate" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary"><i class="fa-solid fa-spinner"></i> Generate Blog
+                    </button>
+                    {% for post in posts %}
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ post.title }}</h5>
+                            <p class="card-text">{{ post.content|truncate(200) }}...</p>
+                            <p class="card-text"><small class="text-muted">Created on {{
+                                post.created_at }}</small></p>
+                        </div>
+                    </div>
+                    {% else %}
+                    <div class="card mb-3" style="margin-top: 20px">
+                        <div class="card-body">
+                            <p class="card-text">No posts to display.</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </form>
+
+                 <!-- Form for viewing the generated blog posts -->
+                <form method="GET" action="{{ url_for('app_views.view_post') }}">
+                    <button type="submit" class="btn btn-primary"><i class="fa-solid fa-spinner"></i> View Generated</button>
+                </form>
+
+            </div>
+        </div>
+        <div id="blog-content" class="row mt-5"></div>
+        <div id="error-message" class="row mt-5"></div>
+        <div id="success-message" class="row mt-5"></div>
+        <div id="loading-spinner" class="row mt-5 d-none">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+
+    </div>
+</section>

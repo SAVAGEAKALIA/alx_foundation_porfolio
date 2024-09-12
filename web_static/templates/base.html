@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A.I BLOG GENERATOR</title>
+    <!-- Css stylesheets-->
+    <!-- <link rel="stylesheet" href="../static/css/bootstrap.min.css">-->
+    <!-- <link rel="stylesheet" href="../static/css/styles7.css">-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles7.css') }}">
+
+    <!-- CDN Google api-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&family=Quattrocento:wght@400;700&display=swap"
+          rel="stylesheet">
+    <!--CDN FONTAWESOME icons-->
+    <script src="https://kit.fontawesome.com/5d06bdefce.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- Tittle -->
+{% block title %}{% endblock %}
+<!-- Features -->
+{% block feature %}{% endblock %}
+<!--A.I bog generate-->
+{% block content %}{% endblock %}
+<!--Testimonials section-->
+{% block testimonials %}{% endblock %}
+<!-- Pricing -->
+{% block pricing %}{% endblock %}
+<!--view post-->
+{% block view %}{% endblock %}
+<!--footer section-->
+<footer id="footer">
+    <a href="http://https://web.facebook.com/profile.php?id=61557319160801"><i
+            class="footer-icons  fa-brands fa-facebook"></i></a>
+    <a href="https://www.instagram.com/saviourakalia/?hl=en"><i class="footer-icons  fa-brands fa-instagram"></i></a>
+    <a href="https://https://x.com/DAddy_Savy"><i class="fa-brands fa-x-twitter"></i></a>
+    <a href="https://github.com/SAVAGEAKALIA"><i class="footer-icons fa-brands fa-github"></i></a>
+    <a href="https://https://www.linkedin.com/in/saviourakalia/"><i class="footer-icons fa-brands fa-linkedin"></i></a>
+    <p>© Copyright A.i Blog Generator</p>
+
+</footer>
+
+<!--javascript-->
+<script type="text/javascript" src="../static/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
