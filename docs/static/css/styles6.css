@@ -1,0 +1,173 @@
+#title-section1 {
+    background-image: url(../images/watersplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    padding-bottom: 150px;
+}
+#title {
+    background-image: url(../images/waterdrop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container-fluid{
+    padding: 2% 7%;
+}
+
+.image1 {
+    height: 40vh;
+    width: 40vh;
+    border-radius: 50%;
+    margin: 0 auto;
+    max-width: 100%;
+    object-fit: cover;
+    position: relative;
+    top: 360px;
+    left: 35%;
+}
+
+#title-section1 .row {
+    padding: 50px 0;
+}
+
+/*section 2*/
+.gen {
+    color: black;
+    background-image: url(static/images/waterdrop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding: 80px 20px 0;
+}
+
+.gen .container-fluid .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+/*Section 3*/
+/*features*/
+#features{
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9% 15%;
+}
+
+#features h3 {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+#features p {
+    color: #8f8f8f;
+}
+
+#features .feature {
+    text-align: center;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+#features .icon {
+    color: #ffc107;
+    padding-bottom: 15px;
+}
+
+#features .icon:hover {
+    color: #fd7e14;
+    padding-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+
+
+/*Section 4*/
+/*Testimonials*/
+
+#testimonials {
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#testimonials h2 {
+    font-family: "Quattrocento", serif;
+    font-weight: 550;
+    color: #8f8f8f;
+    font-size: 1.3rem;
+}
+
+#testimonials .carousel-item {
+    padding: 9% 15%;
+}
+
+#testimonials .carousel-control-next-icon {
+    background-color: #8f8f8f;
+}
+
+#testimonials .carousel-control-prev-icon {
+    background-color: #8f8f8f;
+}
+
+/*pricing section*/
+#pricing {
+    padding: 100px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+
+/*footer section*/
+#footer {
+    padding: 1% 15%;
+    text-align: center;
+    background-color: #fff;
+}
+
+.footer-icons {
+    margin: 20px 10px;
+}
+
+#footer p {
+    font-family: "Quattrocento", serif;
+    font-weight: 600;
+}
+
+
+/*Fonts*/
+.montserrat-alternates-thin {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.5;
+    font-size: 2.0rem;
+}
+
+
+
+.quattrocento-regular {
+    font-family: "Quattrocento", serif;
+    font-weight: 400;
+    line-height: 1.5rem;
+    font-style: normal;
+    font-size: 1.0rem;
+}
+
+.quattrocento-bold {
+    font-family: "Quattrocento", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.pacifico-regular {
+    font-family: "Pacifico", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
